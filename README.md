@@ -4,7 +4,7 @@ This is a to-do-list built with Typescript
 
 ## Built With
 
-- HTML & CSS & Tyescript
+- HTML & CSS & Typescript
 
 ### Prerequisites
 
