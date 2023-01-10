@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Demo</title>
   </head>
   <body>
-    <form id="todoform">
-      <input id="todoinput" type="text" placeholder="Enter a todo" />
-      <button id="btn">Click Me</button>
-    </form>
-    <ul id="todolist"></ul>
+    <div class="container">
+      <form id="todoform">
+        <input id="todoinput" type="text" placeholder="Enter a todo" required />
+        <button id="btn">Submit</button>
+      </form>
+      <div class="list">
+        <ul id="todolist"></ul>
+      </div>
+    </div>
     <script src="/dist/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20rem;
+}
+
+#todolist li {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+ul {
+  padding: 2rem;
+}
