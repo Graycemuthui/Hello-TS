@@ -12,6 +12,17 @@
   padding: 20rem;
 }
 
+#todoinput {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#btn {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
 #todolist li {
   list-style-type: none;
   display: flex;

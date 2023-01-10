@@ -45,7 +45,7 @@ function createTodo(todo) {
     newLi.append(checkbox);
     newLi.append(todo.text);
     newLi.append(removeBtn);
-    removeBtn.innerHTML = "Remove";
+    removeBtn.innerHTML = "Delete";
     list.append(newLi);
 }
 form.addEventListener("submit", handleSubmit);

@@ -58,7 +58,7 @@ function createTodo(todo: Todo) {
   newLi.append(checkbox);
   newLi.append(todo.text);
   newLi.append(removeBtn);
-  removeBtn.innerHTML = "Remove";
+  removeBtn.innerHTML = "Delete";
   list.append(newLi);
 }
 
