@@ -29,14 +29,23 @@ function handleSubmit(e) {
 function createTodo(todo) {
     const newLi = document.createElement("li");
     const checkbox = document.createElement("input");
+    const removeBtn = document.createElement("button");
     checkbox.type = "checkbox";
-    checkbox.checked === todo.completed;
-    checkbox.addEventListener("change", function () {
-        todo.completed = checkbox.checked;
+    checkbox.checked = todo.completed;
+    checkbox.addEventListener("change", (e) => {
+        todo.completed = !todo.completed;
         saveTodos();
+    });
+    removeBtn.addEventListener("click", (e) => {
+        const index = todos.indexOf(todo);
+        todos.splice(index, 1);
+        saveTodos();
+        newLi.remove();
     });
     newLi.append(checkbox);
     newLi.append(todo.text);
+    newLi.append(removeBtn);
+    removeBtn.innerHTML = "Remove";
     list.append(newLi);
 }
 form.addEventListener("submit", handleSubmit);
